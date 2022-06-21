@@ -1,17 +1,6 @@
-let a = 5;
-let b = 6;
+const a = 10
+const b = 8
 
-let soma = (a+b);
-console.log(soma);
-
-let subtração = (a-b);
-console.log(subtração);
-
-let multiplicação = (a*b);
-console.log(multiplicação);
-
-let divisão = (a/b);
-console.log(divisão);
-
-let resto = (a%b);
-console.log(resto);
+if (a > b) {
+    console.log(a);
+}
