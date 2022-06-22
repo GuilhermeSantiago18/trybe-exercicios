@@ -3,5 +3,7 @@ let soma = 0
 for (index = 0; index < numbers.length; index +=1)
 soma = soma + numbers[index]
 
+let media = (soma / numbers.length);
 
-console.log(soma);
+
+console.log(media);
