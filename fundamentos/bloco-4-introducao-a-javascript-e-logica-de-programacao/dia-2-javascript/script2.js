@@ -1,7 +1,8 @@
 let numbers = [];
-let divisao = (numbers[index] / 2);
-for (let index = 0; index <= 25; index += 1) {
-numbers.push(index) 
+for (let index = 0; index < 26; index += 1) {
+numbers.push(index) }
 
-}
-console.log(divisao);
+         for (let count = 0; count < numbers.length; count +=1)   {
+
+        
+          console.log(numbers[count] / 2); }
