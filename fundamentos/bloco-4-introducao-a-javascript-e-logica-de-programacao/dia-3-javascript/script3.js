@@ -1,6 +1,8 @@
-let fatorial = 1
+let word = 'Bicicleta';
+let contrario = [];
 
-for (index = 1; index < 11; index +=1) {
-    fatorial = (index * fatorial);
-  }
-  console.log(fatorial); 
+    for (let index = word.length - 1; index >= 0; index -=1) {
+        contrario.push(word[index]);
+    }
+
+console.log(contrario)
