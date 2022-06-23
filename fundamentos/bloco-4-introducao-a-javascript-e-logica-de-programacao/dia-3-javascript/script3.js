@@ -5,4 +5,5 @@ let contrario = [];
         contrario.push(word[index]);
     }
 
+    
 console.log(contrario)
