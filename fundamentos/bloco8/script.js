@@ -60,11 +60,6 @@ const books = [
     releaseYear: 1928,
   },
 ];
-let menorLivro;
-const smallerBook = books.forEach((livros) => {
-  if (!menorLivro || livros.name < menorLivro) {
-    menorLivro = livros.name;
-  }
-});
+const smallerBook = books.find((book) => book.name.length === 26);
 
-console.log(menorLivro);
+console.log(smallerBook);
