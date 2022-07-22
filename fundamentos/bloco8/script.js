@@ -60,6 +60,6 @@ const books = [
     releaseYear: 1928,
   },
 ];
-const smallerBook = books.find((book) => book.name.length === 26);
+const orderedBooks = books.sort((a,b) => b.releaseYear-a.releaseYear);
 
-console.log(smallerBook);
+console.log(orderedBooks);
