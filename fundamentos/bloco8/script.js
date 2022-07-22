@@ -60,11 +60,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
-const everyoneWasBornOnSecXX = books.every((year) => {
-  if (year.author.birthYear < 2000 && year.author.birthYear > 1899) {
+const launchYearBook = books.some((year) => {
+  if (year.releaseYear < 1990 && year.releaseYear > 1979) {
     return true;
   }
   return false;
 });
 
-console.log(everyoneWasBornOnSecXX);
+console.log(launchYearBook);
