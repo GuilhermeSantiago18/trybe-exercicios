@@ -60,6 +60,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
-const orderedBooks = books.sort((a,b) => b.releaseYear-a.releaseYear);
+const everyoneWasBornOnSecXX = books.every((year) => {
+  if (year.author.birthYear < 2000 && year.author.birthYear > 1899) {
+    return true;
+  }
+  return false;
+});
 
-console.log(orderedBooks);
+console.log(everyoneWasBornOnSecXX);
