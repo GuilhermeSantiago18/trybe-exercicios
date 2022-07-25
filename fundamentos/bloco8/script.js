@@ -63,7 +63,7 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-const fantasyOrScienceFiction = books.filter((element) => 
-element.genre === 'Ficção Científica' || element.genre === 'Fantasia');
+const fantasyOrScienceFiction = books.filter((element) => 2022 - element.releaseYear > 60);
+fantasyOrScienceFiction.sort((a,b) => a.releaseYear -b.releaseYear);
 
 console.log(fantasyOrScienceFiction);
