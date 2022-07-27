@@ -1,19 +1,11 @@
-const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
-const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+const rectangleArea = (width, height) => width * height;
 
-const studentAverage = students.map((student, index) => ({
-  name: student,
-  average: (grades[index].reduce((acc, curr) => acc + curr, 0) / grades[index].length)}
-));
+const rectangle1 = [1, 2];
+const rectangle2 = [3, 5];
+const rectangle3 = [6, 9];
+const rectangles = [rectangle1, rectangle2, rectangle3];
 
-
-console.log(studentAverage);
-  // escreva seu código aqui
-
-
-
-// // const expected = [
-//   { name: 'Pedro Henrique', average: 7.8 },
-//   { name: 'Miguel', average: 9.2 },
-//   { name: 'Maria Clara', average: 8.8 },
-// ];
+rectangles.forEach((rectangle) => {
+  rectangleArea(...rectangle) // altere a chamada da funcao rectangleArea
+  console.log(rectangle[0] * rectangle[1]);
+});
