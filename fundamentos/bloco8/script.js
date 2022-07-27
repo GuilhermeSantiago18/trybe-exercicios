@@ -61,12 +61,9 @@ const books = [
   },
 ];
 
-const longestNamedBook = books.reduce((acc, curr) => {
-  if (curr.name.length > acc.name.length) {
-    return curr;
-  }
-  return acc;
-});
+const longestNamedBook = books
+.reduce((acc, curr) => curr.name.length > acc.name.length ? curr : acc);
+
 
 
 console.log(longestNamedBook);
