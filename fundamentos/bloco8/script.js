@@ -61,8 +61,7 @@ const books = [
   },
 ];
 
-// const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
-const filtro = books.map((element) => element.author.name)
-.reduce((acc, curr) => `${acc.concat(curr)}, ` , '');
-
-console.log(filtro);
+const somaTotal = 0;
+const filtro = books.map((element) => element.releaseYear - element.author.birthYear)
+.reduce((acc, curr) => acc + curr, somaTotal);
+console.log(filtro / books.length);
