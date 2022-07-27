@@ -61,7 +61,12 @@ const books = [
   },
 ];
 
-const somaTotal = 0;
-const filtro = books.map((element) => element.releaseYear - element.author.birthYear)
-.reduce((acc, curr) => acc + curr, somaTotal);
-console.log(filtro / books.length);
+const longestNamedBook = books.reduce((acc, curr) => {
+  if (curr.name.length > acc.name.length) {
+    return curr;
+  }
+  return acc;
+});
+
+
+console.log(longestNamedBook);
