@@ -1,12 +1,9 @@
-const getPlanet = () => {
-    const mars = {
-      name: 'Mars',
-      distanceFromSun: {
-        value: 227900000,
-        measurementUnit: 'kilometers',
-      },
-    };
-   setTimeout(() => console.log('Returned planet: ', mars), 4000);
-  };
-  
-  getPlanet();
+const messageDelay = () => Math.floor(Math.random() * 5000);
+
+const getMarsTemperature = () => {
+  const maxTemperature = 58;
+  return Math.floor(Math.random() * maxTemperature);
+};
+
+
+setTimeout((sendMarsTemperature) => console.log('A temperatura de Marte é:', getMarsTemperature(), 'graus celsius'), 5000);
