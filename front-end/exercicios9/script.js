@@ -1,9 +1,8 @@
-const messageDelay = () => Math.floor(Math.random() * 5000);
+// apiScript.js
+const API_URL = 'https://icanhazdadjoke.com/';
 
-const getMarsTemperature = () => {
-  const maxTemperature = 58;
-  return Math.floor(Math.random() * maxTemperature);
+const fetchJoke = () => {
+  // Adicionar lógica aqui!
 };
 
-
-setTimeout((sendMarsTemperature) => console.log('A temperatura de Marte é:', getMarsTemperature(), 'graus celsius'), 5000);
+window.onload = () => fetchJoke();
