@@ -1,0 +1,1 @@
+SELECT job_id, AVG(salary) AS 'averageSalary' FROM hr.employees GROUP BY job_id ORDER BY averageSalary DESC;
