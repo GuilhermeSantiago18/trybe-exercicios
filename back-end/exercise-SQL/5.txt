@@ -1,0 +1,1 @@
+SELECT MAX(salary) AS 'maior_salario', MIN(salary) AS 'menor_salario', SUM(salary) AS 'soma_salarios', AVG(salary) AS 'media_salario' FROM hr.employees;
